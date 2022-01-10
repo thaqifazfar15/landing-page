@@ -9,21 +9,31 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: gray;
 }
 
 .right {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 16px;
 }
 
+.right, .left {
+    margin-inline: 24px;
+}
+
 .about {
-    height: 50vh;
-    background-color: green;
+    height: 60vh;
+    background-color: blue;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.about-tag {
+    border: 5px white;
 }
 
 .about-container {
@@ -34,11 +44,44 @@ body {
 }
 
 .info {
-    height: 40vh;
+    height: 60vh;
     background-color: orange;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+}
+
+.info > .talent {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.talent-img {
+    width: 180px;
+    height: 200px;
+    background-color: white;
+}
+
+.talent-desc {
+    text-align: center;
+    max-width: 15em;
 }
 
 .testimony {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
 
+.testimony-name {
+    display: flex;
+    justify-content: flex-end;
 }
